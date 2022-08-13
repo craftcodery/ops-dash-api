@@ -8,6 +8,6 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        return Project::all();
+        return ['projects' => Project::all()];
     }
 }
